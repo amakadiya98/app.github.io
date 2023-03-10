@@ -215,12 +215,13 @@ body{
     box-shadow: -3px 11px 41px rgba(159, 159, 159, 0.15);
     backdrop-filter: blur(6.5px);
     border-radius: 20px;
-    padding: 48px 120px 70px;
+    padding: 48px 70px 70px;
     position: relative;
     display: flex;
     justify-content: center;
     overflow: hidden;
     margin-bottom: 68px;
+    /* border: 1px solid #d9d9d921; */
 }
 .application-part .card-part .card::before{
     position: absolute;
@@ -264,12 +265,11 @@ body{
 .card .info-part.long-info{
     font-family: 'Alpino';
     font-style: normal;
-    font-weight: 507;
-    font-size: 22px;
+    font-weight: 500;
+    font-size: 20px;
     line-height: 30px;
     text-align: center;
     color: #FFFFFF;
-    max-width: 60%;
     text-transform: none;
     margin-top: 28px !important;
     margin: auto;
@@ -277,32 +277,189 @@ body{
 .card .info-part p{
     margin: 0;
 }
-.application-part .card-part .card .arrow-part{
+.down-arrow{
     position: absolute;
     bottom: -20px;
-    position: absolute;
-    transform: translate(-50%, -50%);
     height: 40px;
-    width: 80px;
-    border-radius: 150px 150px 0 0;
-    background-color: green;
-}
-/* .application-part .card-part .card .arrow-part::after{
-    position: absolute;
-    content: "";
-    background: url(.png), radial-gradient(98.81% 79.15% at 98.81% 49.96%, #47384B 0%, #332137 100%);
+    width: 40px;
+    /* background-color: red; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 1px solid #d9d9d942; */
+    background: url(.png), radial-gradient(239.81% 79.15% at 98.81% 49.96%, #47384b5c 0%, #33213726 100%);
     mix-blend-mode: normal;
-    opacity: 0.5;
-    width: 40px;
-    height: 40px;
-    left: 0;
-    border-radius: 50%;
-} */
-
-.application-part .card-part .card .arrow-part button{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    z-index: 2;
+}
+.down-arrow button{
+    background-color: transparent;
     border: 0;
-   
+    padding-top: 6px;
+}
+.down-arrow button img{
+    width: 85%;
+}
+
+
+/* footer part */
+.social-media-part{
+    display: flex;
+    align-items: center;
+    grid-gap: 7px;
+}
+.footer-content{
+    background: linear-gradient(129.48deg, rgba(255, 255, 255, 0.078) 1.91%, rgba(255, 255, 255, 0.426) 68.31%);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(131.633px);
+    border-radius: 6px;
+    padding: 6px;
+    width: fit-content;
+}
+.social-media-part .social{
+    height: 20px;
+    width: 20px;
+    background: url(.png), radial-gradient(98.81% 79.15% at 98.81% 49.96%, #47384B 0%, #332137 100%);
+    box-shadow: 0px 16.02px 32.04px rgba(0, 0, 0, 0.28);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+}
+
+.main-part .content-part{
+    position: fixed;
+    left: 25%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+    width: 20%;
+}
+.main-part .application-part{
+    width: 30%;
+    margin-left: 20%;
+}
+
+@media screen and (max-width: 1440px) {
+    .main-part .application-part {
+        margin-left: 40%;
+        width: 40%;
+    }
+    .main-part .content-part {
+        width: 25%;
+    }
+    .header-content{
+        margin-top: 70px;
+    }
+    .main-part .content-part{
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .main-part{
+        width: 80%;
+    }
+    .main-part .application-part {
+        margin-left: 40%;
+        width: 30%;
+    }
+
+    .header-content .heading-part h1 {
+        font-size: 50px;
+    }
+
+    .header-content .download-app a img{
+        width: 120px;
+    }
+
+    .card .info-part.long-info{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .application-part .card-part .card {
+        width: 80%;
+    }
+    .main-part .application-part {
+        margin-left: 28%;
+    }
+    .footer-content{
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header-content .download-app a img{
+        width: 100px;
+    }
+
+    .header-content .heading-part p{
+        font-size: 18px;
+    }
+    .main-part .content-part {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-part{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .main-part .content-part{
+        position: unset;
+        width: 100%;
+        align-items: center;
+        height: auto;
+    }
+    .main-part .content-part .header-content {
+        margin-bottom: 80px;
+    }
+    .main-part .application-part{
+        margin-left: -8%;
+        width: auto;
+    }
+    .header-content .heading-part h1 {
+        font-size: 70px;
+        line-height: 110%;
+    }
+    .header-content .download-app a img{
+        width: 100%;
+    }
+    .header-content .heading-part p{
+        font-size: 26px;
+    }
+    .main-part{
+        position: relative;
+    }
+    .footer-content{
+        position: absolute;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .application-part .card-part .card{
+        padding: 48px 35px 35px;
+    }
+    .main-part .application-part{
+        margin: 0;
+    }
+    .header-content{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .application-part .card-part .card{
+        padding: 48px 30px 30px;
+    }
+    .header-content .heading-part p{
+        font-size: 22px;
+    }
 }
