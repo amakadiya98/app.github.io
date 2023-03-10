@@ -444,20 +444,42 @@ body{
 }
 
 @media screen and (max-width: 500px) {
-    .application-part .card-part .card{
-        padding: 48px 35px 35px;
+    .main-part{
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
     }
     .main-part .application-part{
         margin: 0;
+        width: 100%;
     }
     .header-content{
         margin-top: 50px;
     }
+    .application-part .card-part .card{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 0;
+    }
+    .application-part .card-part .card,
+    .application-part .card-part .card::before,
+    .application-part .card-part .card::after{
+        border-radius: 0;
+    }
+    .footer-content{
+        bottom: 10px;
+    }
+    
 }
 
 @media screen and (max-width: 340px) {
-    .application-part .card-part .card{
-        padding: 48px 30px 30px;
+    .header-content {
+        padding: 0 20px;
+    }
+    .header-content .heading-part h1{
+        font-size: 65px;
     }
     .header-content .heading-part p{
         font-size: 22px;
