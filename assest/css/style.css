@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'Tanker-Regular';
+    src: url('../fonts/Tanker-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alpino';
+    src: url('../fonts/Alpino-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Alpino';
+    src: url('../fonts/Alpino-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Alpino';
+    src: url('../fonts/Alpino-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Alpino';
+    src: url('../fonts/Alpino-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Alpino';
+    src: url('../fonts/Alpino-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Alpino';
+    src: url('../fonts/Alpino-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+body{
+    margin: 0;
+}
+.main-content-part{
+    background: url(.png), radial-gradient(98.81% 79.15% at 98.81% 49.96%, #160019 0%, #200923 100%, #200923 100%);
+   
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.header-content .logo-part {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.header-content .logo-part h3 {
+    font-family: 'Tanker-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23px;
+    color: #FFF;
+}
+
+.header-content .heading-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 25px 0;
+    gap: 15px;
+}
+
+.header-content .heading-part h1 {
+    font-family: 'Tanker-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 110%;
+    color: #FFF;
+    margin: 0;
+}
+
+.header-content .heading-part p {
+    font-family: 'Alpino';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.header-content .heading-part p span.violet {
+    color: #7a4bd7;
+}
+
+.header-content .heading-part p span.gradiant {
+    background-color: #8f61cc;
+    background-image: linear-gradient(#8f61cc, #b387bb);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.header-content .heading-part p span.light-gradiant {
+    background-color: #8f61cc;
+    background-image: linear-gradient(#c095b5, #d9b0a9);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.header-content .download-app {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.header-content .download-app .mobile-badges {
+    display: flex;
+    text-decoration: none;
+    padding: 10px 18px;
+    background: #0C0D10;
+    mix-blend-mode: normal;
+    border-radius: 7px;
+    color: #FFF;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.header-content .download-app .mobile-badges .icon-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content .download-app .mobile-badges .icon-part img {
+    width: 27px;
+    height: 30px;
+}
+
+.header-content .download-app .mobile-badges .content-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-content .download-app .mobile-badges .content-part p {
+    margin: 0;
+    font-family: 'alpino';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.header-content .download-app .mobile-badges .content-part h6 {
+    font-family: 'alpino';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.header-content .download-app .mobile-badges:hover{
+    background-color: #0C0D10;
+}
+
+.main-part{
+    display: flex;
+    justify-content: center;
+    grid-gap: 90px;
+    width: 60%;
+    margin: auto;
+    padding: 65px 10px;
+}
+.application-part .card-part .card{
+    background: url(.png), radial-gradient(98.81% 79.15% at 98.81% 49.96%, #160019 0%, #200923 100%, #200923 100%);
+    box-shadow: -3px 11px 41px rgba(159, 159, 159, 0.15);
+    backdrop-filter: blur(6.5px);
+    border-radius: 20px;
+    padding: 48px 120px 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 68px;
+}
+.application-part .card-part .card::before{
+    position: absolute;
+    content: "";
+    background: url(.png), radial-gradient(98.81% 79.15% at 98.81% 49.96%, #47384B 0%, #332137 100%);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    z-index: -1;
+}
+.application-part .card-part .card::after{
+    position: absolute;
+    content: "";
+    background: url(.png), radial-gradient(98.81% 79.15% at 98.81% 49.96%, #47384B 0%, #332137 100%);
+    mix-blend-mode: overlay;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+}
+.card .image-part{
+    text-align: center;
+}
+.card .info-part{
+    font-family: 'Tanker-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-top: 28px;
+}
+.card .info-part.long-info{
+    font-family: 'Alpino';
+    font-style: normal;
+    font-weight: 507;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 60%;
+    text-transform: none;
+    margin-top: 28px !important;
+    margin: auto;
+}
+.card .info-part p{
+    margin: 0;
+}
+.application-part .card-part .card .arrow-part{
+    position: absolute;
+    bottom: -20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 80px;
+    border-radius: 150px 150px 0 0;
+    background-color: green;
+}
+/* .application-part .card-part .card .arrow-part::after{
+    position: absolute;
+    content: "";
+    background: url(.png), radial-gradient(98.81% 79.15% at 98.81% 49.96%, #47384B 0%, #332137 100%);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    border-radius: 50%;
+} */
+
+.application-part .card-part .card .arrow-part button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+   
+}
