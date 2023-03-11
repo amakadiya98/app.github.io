@@ -1,0 +1,296 @@
+@font-face {
+    font-family: "Tanker";
+    src: url('./Fonts/OTF/Tanker-Regular.otf');
+}
+@font-face {
+    font-family: "Alpino";
+    src: url('./Alpino_Complete/Fonts/OTF/Alpino-Regular.otf');
+}
+@font-face {
+    font-family: 'Alpino';
+    src: url('./Fonts/Alpino-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+body{
+    /* background-image: url('./boxes/Background.svg'); */
+    background: url(.png), radial-gradient(98.81% 79.15% at 98.81% 49.96%, #160019 0%, #200923 100%, #200923 100%);
+}
+
+.contianer{
+    display: flex;
+    justify-content: center;
+    gap: 95px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.left-section {
+    width: 372px;
+    height: 385px;
+    position: sticky;
+    top: 15%;
+    
+}
+
+.left-section .tutlub{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tutlub-title{
+    color: #ffff;
+    font-size: 17px;
+    margin: 0;
+}
+.sction-text .sction-title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 70px;
+    color: #ffff;
+    font-family: "Tanker";
+    line-height: 110%;
+}
+.sction-text .p-text{
+    color: #ffff;
+    font-size: 26px;
+    font-family: 'Alpino';
+    width: 87%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sction-text .sction-p .p-span, .p-span2{
+    color: #5D369E;
+}
+.store-icons{
+    display: flex;
+    gap: 20px;
+}
+.apple-store , .androied-store{
+    cursor: pointer;
+}
+
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    padding: 12px;
+    background: linear-gradient(129.48deg, rgba(255, 255, 255, 0.078) 1.91%, rgba(255, 255, 255, 0.426) 68.31%);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(131.633px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 6px;
+}
+
+.icons-container a {
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(98.81% 79.15% at 98.81% 49.96%, #47384B 0%, #332137 100%);
+    box-shadow: 0px 16.020000457763672px 32.040000915527344px 0px #00000047;
+    text-align: center;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.icons-container a:hover{
+    text-decoration: none;
+}
+
+
+
+/* Right */
+.right-sction{
+    margin-top: 50px;
+}
+.scroll-box1{
+    
+    position: relative;
+    margin-top: 20px;
+    width: 491px;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-box {
+    background-image: url('./photo/Subtract.png');
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+    margin-top: 20px;
+    width: 491px;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen{
+    position: absolute;
+    top: 10%;
+    width: 214px;
+    height: 459px;
+    display: block;
+}
+.h2-box{
+    position: absolute;
+    bottom: 78px;
+    text-align: center;
+    margin-top: 38rem;
+}
+.vector-div{
+    position: absolute;
+    bottom: -2px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    width: 30px;
+    border-radius: 20px 20px 0 0;
+    left: 47%;
+}
+
+
+/* for small phone */
+@media (max-width: 990px) {
+    .contianer .left-section {
+        width: 372px;
+        height: 385px;
+        position: relative;
+        top: 80px;
+        left: 20px;
+    }
+    .contianer{
+        overflow-x: hidden;
+        gap: 150px;
+    }
+    .icons-container {
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .sction-text .sction-title {
+        font-weight: lighter;
+    }
+    .right-sction {
+        margin-top: 120px;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 1280px){
+
+}
+
+
+
+.card-part .card{
+    background: url(.png), radial-gradient(98.81% 79.15% at 98.81% 49.96%, #160019 0%, #200923 100%, #200923 100%);
+    box-shadow: -3px 11px 41px rgba(159, 159, 159, 0.15);
+    backdrop-filter: blur(6.5px);
+    border-radius: 20px;
+    /* padding: 48px 70px 70px; */
+    width: 490px;
+    height: 670px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 68px;
+    border: 1px solid #d9d9d90f;
+    /* border: 1px solid #d9d9d921; */
+    /* background-image: url('./icons/Subtract.svg'); */
+}
+.card-part .card::before{
+    position: absolute;
+    content: "";
+    background: url(.png), radial-gradient(98.81% 79.15% at 98.81% 49.96%, #47384B 0%, #332137 100%);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    z-index: -1;
+}
+.card-part .card::after{
+    position: absolute;
+    content: "";
+    background: url(.png), radial-gradient(98.81% 79.15% at 98.81% 49.96%, #47384B 0%, #332137 100%);
+    mix-blend-mode: overlay;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    z-index: -1;
+}
+.card .image-part{
+    text-align: center;
+}
+.card .info-part{
+    font-family: "Tanker";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-top: 28px;
+}
+.card .info-part.long-info{
+    font-family: 'Alpino';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: none;
+    margin-top: 28px !important;
+    margin: auto;
+}
+.card .info-part p{
+    margin: 0;
+}
+.down-arrow{
+    position: absolute;
+    bottom: -20px;
+    height: 40px;
+    width: 40px;
+    /* background-color: red; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 1px solid #d9d9d942; */
+    background: url(.png), radial-gradient(239.81% 79.15% at 98.81% 49.96%, #47384b5c 0%, #33213726 100%);
+    mix-blend-mode: normal;
+    z-index: 2;
+}
+.down-arrow button{
+    background-color: transparent;
+    border: 0;
+   margin-top: -2px;
+}
+.down-arrow button img{
+    width: 85%;
+}
