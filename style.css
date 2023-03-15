@@ -15,7 +15,7 @@
 }
 body{
     /* background-image: url('./boxes/Background.svg'); */
-    background: url(.png), radial-gradient(98.81% 79.15% at 98.81% 49.96%, #160019 0%, #200923 100%, #200923 100%);
+    background: radial-gradient(98.81% 79.15% at 98.81% 49.96%, #160019 0%, #200923 100%, #200923 100%);
 }
 
 .contianer{
@@ -199,7 +199,7 @@ body{
 
 
 .card-part .card{
-    background: url(.png), radial-gradient(98.81% 79.15% at 98.81% 49.96%, #160019 0%, #200923 100%, #200923 100%);
+    background: radial-gradient(98.81% 79.15% at 98.81% 49.96%, #160019 0%, #200923 100%, #200923 100%);
     box-shadow: -3px 11px 41px rgba(159, 159, 159, 0.15);
     backdrop-filter: blur(6.5px);
     border-radius: 20px;
@@ -220,7 +220,7 @@ body{
 .card-part .card::before{
     position: absolute;
     content: "";
-    background: url(.png), radial-gradient(98.81% 79.15% at 98.81% 49.96%, #47384B 0%, #332137 100%);
+    background: radial-gradient(98.81% 79.15% at 98.81% 49.96%, #47384B 0%, #332137 100%);
     mix-blend-mode: normal;
     opacity: 0.5;
     width: 100%;
@@ -233,7 +233,7 @@ body{
 .card-part .card::after{
     position: absolute;
     content: "";
-    background: url(.png), radial-gradient(98.81% 79.15% at 98.81% 49.96%, #47384B 0%, #332137 100%);
+    background: radial-gradient(98.81% 79.15% at 98.81% 49.96%, #47384B 0%, #332137 100%);
     mix-blend-mode: overlay;
     opacity: 0.6;
     width: 100%;
@@ -283,7 +283,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     /* border: 1px solid #d9d9d942; */
-    background: url(.png), radial-gradient(239.81% 79.15% at 98.81% 49.96%, #47384b5c 0%, #33213726 100%);
+    background: radial-gradient(239.81% 79.15% at 98.81% 49.96%, #47384b5c 0%, #33213726 100%);
     mix-blend-mode: normal;
     z-index: 2;
     border: 1px solid #301f33;
