@@ -37,7 +37,7 @@ body{
 .left-section .tutlub{
     display: flex;
     gap: 10px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 .tutlub-title{
@@ -58,8 +58,9 @@ body{
     font-size: 26px;
     font-family: 'Alpino';
     width: 87%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 20px; */
+    padding-bottom: 34px;
+    margin-bottom: 0;
 }
 
 .sction-text .sction-p .p-span, .p-span2{
@@ -212,7 +213,7 @@ body{
     align-items: center;
     overflow: hidden;
     margin-bottom: 68px;
-    border: 1px solid #d9d9d90f;
+    border: 1px solid #301f33;
     /* border: 1px solid #d9d9d921; */
     /* background-image: url('./icons/Subtract.svg'); */
 }
@@ -285,6 +286,7 @@ body{
     background: url(.png), radial-gradient(239.81% 79.15% at 98.81% 49.96%, #47384b5c 0%, #33213726 100%);
     mix-blend-mode: normal;
     z-index: 2;
+    border: 1px solid #301f33;
 }
 .down-arrow button{
     background-color: transparent;
