@@ -246,6 +246,10 @@ body{
 .card .image-part{
     text-align: center;
 }
+.card .image-part img{
+    width: 222px;
+    height: 430px;
+}
 .card .info-part{
     font-family: "Tanker";
     font-style: normal;
