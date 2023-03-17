@@ -1,3 +1,10 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @font-face {
     font-family: "Tanker";
     src: url('./Fonts/OTF/Tanker-Regular.otf');
@@ -15,26 +22,35 @@
 }
 body{
     /* background-image: url('./boxes/Background.svg'); */
+    background: -o-radial-gradient(98.81% 49.96%, 98.81% 79.15%, #160019 0%, #200923 100%, #200923 100%);
     background: radial-gradient(98.81% 79.15% at 98.81% 49.96%, #160019 0%, #200923 100%, #200923 100%);
 }
 
 .contianer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 95px;
     position: relative;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .left-section {
     width: 372px;
     height: 385px;
+    position: -webkit-sticky;
     position: sticky;
     top: 15%;
     
 }
 
 .left-section .tutlub{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
     /* margin-bottom: 15px; */
@@ -67,6 +83,8 @@ body{
     color: #5D369E;
 }
 .store-icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
 }
@@ -76,16 +94,24 @@ body{
 
 
 .icons-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 15px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: fixed;
     bottom: 50px;
     padding: 12px;
+    background: -o-linear-gradient(320.52deg, rgba(255, 255, 255, 0.078) 1.91%, rgba(255, 255, 255, 0.426) 68.31%);
     background: linear-gradient(129.48deg, rgba(255, 255, 255, 0.078) 1.91%, rgba(255, 255, 255, 0.426) 68.31%);
     mix-blend-mode: normal;
-    backdrop-filter: blur(131.633px);
+    -webkit-backdrop-filter: blur(131.633px);
+            backdrop-filter: blur(131.633px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 6px;
 }
@@ -93,17 +119,25 @@ body{
 .icons-container a {
     width: 40px;
     height: 40px;
+    background: -o-radial-gradient(98.81% 49.96%, 98.81% 79.15%, #47384B 0%, #332137 100%);
     background: radial-gradient(98.81% 79.15% at 98.81% 49.96%, #47384B 0%, #332137 100%);
-    box-shadow: 0px 16.020000457763672px 32.040000915527344px 0px #00000047;
+    -webkit-box-shadow: 0px 16.020000457763672px 32.040000915527344px 0px #00000047;
+            box-shadow: 0px 16.020000457763672px 32.040000915527344px 0px #00000047;
     text-align: center;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-decoration: none;
 }
 .icons-container a:hover{
@@ -122,9 +156,15 @@ body{
     margin-top: 20px;
     width: 491px;
     height: 670px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .scroll-box {
@@ -135,9 +175,15 @@ body{
     margin-top: 20px;
     width: 491px;
     height: 670px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .screen{
     position: absolute;
@@ -199,18 +245,27 @@ body{
 
 
 .card-part .card{
+    background: -o-radial-gradient(98.81% 49.96%, 98.81% 79.15%, #160019 0%, #200923 100%, #200923 100%);
     background: radial-gradient(98.81% 79.15% at 98.81% 49.96%, #160019 0%, #200923 100%, #200923 100%);
-    box-shadow: -3px 11px 41px rgba(159, 159, 159, 0.15);
-    backdrop-filter: blur(6.5px);
+    -webkit-box-shadow: -3px 11px 41px rgba(159, 159, 159, 0.15);
+            box-shadow: -3px 11px 41px rgba(159, 159, 159, 0.15);
+    -webkit-backdrop-filter: blur(6.5px);
+            backdrop-filter: blur(6.5px);
     border-radius: 20px;
     /* padding: 48px 70px 70px; */
     width: 490px;
     height: 670px;
 
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     overflow: hidden;
     margin-bottom: 68px;
     border: 1px solid #301f33;
@@ -220,6 +275,7 @@ body{
 .card-part .card::before{
     position: absolute;
     content: "";
+    background: -o-radial-gradient(98.81% 49.96%, 98.81% 79.15%, #47384B 0%, #332137 100%);
     background: radial-gradient(98.81% 79.15% at 98.81% 49.96%, #47384B 0%, #332137 100%);
     mix-blend-mode: normal;
     opacity: 0.5;
@@ -233,6 +289,7 @@ body{
 .card-part .card::after{
     position: absolute;
     content: "";
+    background: -o-radial-gradient(98.81% 49.96%, 98.81% 79.15%, #47384B 0%, #332137 100%);
     background: radial-gradient(98.81% 79.15% at 98.81% 49.96%, #47384B 0%, #332137 100%);
     mix-blend-mode: overlay;
     opacity: 0.6;
@@ -283,10 +340,17 @@ body{
     width: 40px;
     /* background-color: red; */
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     /* border: 1px solid #d9d9d942; */
+    background: -o-radial-gradient(98.81% 49.96%, 239.81% 79.15%, #47384b5c 0%, #33213726 100%);
     background: radial-gradient(239.81% 79.15% at 98.81% 49.96%, #47384b5c 0%, #33213726 100%);
     mix-blend-mode: normal;
     z-index: 2;
